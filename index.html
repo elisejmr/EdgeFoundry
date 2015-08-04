@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Edge Foundry</title>
+	<meta charset="utf-8">
+
+	<!-- sets width of page to follow screen-width of device and sets initial zoom level when page is loaded by browser -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="edgefoundry_stylesheet.css" type="text/css"> 
+	
+	<!-- Latest JQuery CDN via Google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> 
+
+	<!-- Latest compiled and minified JavaScript--> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+		
+
+
+	<!-- Automatic image resize -->
+	<script>
+	$(document).ready(function() {
+		$("#slide-5 #slide-1").height(
+				$("#slide-5 #slide-1").width()*0.4
+			);
+		$( window ).resize(function() {
+
+			$("#slide-5 #slide-1").height(
+				$("#slide-5 #slide-1").width()*0.4
+			);
+		});
+	});
+
+	</script> 
+
+<!-- Parallax tutorial javascript 
+	<script src="js/_main.js"></script> -->
+
+
+
+</head>	
+<body>
+<main>
+<!-- Fade out content -->
+<section id="slide-1" class="homeSlide" height 690px;"">
+    <div class="bcg skrollable skrollable-before" 
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-1"
+        style="background-position: 50% 0px;"
+    > 
+
+        <div class="hsContainer">
+  
+            <div class="hsContent skrollable skrollable-before"
+                data-center="opacity: 1"
+                data-106-top="opacity: 0"
+                data-anchor-target="#slide-1 h2"
+                style="opacity:1;"
+            >
+            <h2>Fade out elements before they leave viewport</h2>
+            </div>
+        </div>
+    </div>
+
+</section> 
+
+<!-- Curtain effect -->
+<!-- <section id="slide-4" class="homeSlide homeSlideTall">
+    <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide-4"
+    >
+        <div class="curtainContainer">
+            <div class="curtain"
+                data-bottom-top="opacity: 0"
+                data-106-top="height: 1%; top: -10%; opacity: 0;"
+                data-center="height: 100%; top: 0%; opacity: 0.5"
+                data-anchor-target="#slide-4"
+            ></div>
+            <div class="copy"
+                data-bottom-top="opacity: 0"
+                data--100-bottom="opacity: 0"
+                data--280-bottom="opacity: 1;"
+                data-280-top="opacity: 1;"
+                data-106-top="opacity: 0;"
+                data-anchor-target="#slide-4 .copy"
+            >
+                <h2>Curtain effect while you scroll</h2>
+            </div>
+ 
+        </div>
+    </div>
+</section> -->
+
+<!-- Crossfade to blur effect -->
+<section id="slide-5" class="homeSlide homeSlideTall2">
+
+    <div class="bcg">&nbsp;</div>
+
+    <div class="bcg bcg2"
+        data-bottom-top="opacity: 0;"
+        data--33p-top="opacity: 0;"
+        data--66p-top="opacity: 1;"
+        data-anchor-target="#slide-5"
+    >  
+        <div class="hsContainer">
+            <div class="hsContent"
+                data-bottom-top="opacity: 0;"
+                data-center="opacity: 1"
+                data-anchor-target="#slide-5"
+            >
+            <h2>Why isn't this text showing up??</h2>
+   
+            </div>
+        </div>
+    </div>
+    <!--<div class="bcg bcg3"
+        data-300-bottom="opacity: 0;"
+        data-100-bottom="opacity: 1;"
+        data-anchor-target="#slide-5"
+    >
+        <div class="hsContainer">
+            <div class="hsContent"
+                data-100-bottom="opacity: 0;"
+                data-bottom="opacity: 1;"
+                data-anchor-target="#slide-5"
+            >
+                <h2>The End</h2>
+            </div>
+        </div>
+    </div>-->
+</section>
+</main>
+
+
+<script src="js/imagesloaded.js"></script> 
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>
+<script src="js/_main.js"></script> 
+    
+</body>
