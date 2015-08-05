@@ -15,8 +15,8 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> 
+	<!-- Optional theme 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
 
 	<!-- Latest compiled and minified JavaScript--> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
@@ -45,31 +45,65 @@
 
 
 </head>	
+
 <body>
-<main>
-<!-- Fade out content -->
-<section id="slide-1" class="homeSlide" height 690px;"">
-    <div class="bcg skrollable skrollable-before" 
-        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-anchor-target="#slide-1"
-        style="background-position: 50% 0px;"
-    > 
 
-        <div class="hsContainer">
+<nav class="navbar navbar-inverse">
   
-            <div class="hsContent skrollable skrollable-before"
-                data-center="opacity: 1"
-                data-106-top="opacity: 0"
-                data-anchor-target="#slide-1 h2"
-                style="opacity:1;"
-            >
-            <h2>Fade out elements before they leave viewport</h2>
-            </div>
-        </div>
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Edge Foundry</a>
     </div>
+  	
+	<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li> 
+        <li><a href="#">Page 3</a></li> 
+      </ul>
+    </div>
+  
+  </div>
 
-</section> 
+</nav> 
+
+<main>
+
+<div id="top" class="container-fluid">
+	<!-- Fade out content -->
+	<section id="slide-1" class="homeSlide" height="532px;">
+
+    	<div class="bcg skrollable skrollable-before"
+        	data-center="background-position: 50% 0px;"
+        	data-top-bottom="background-position: 50% -100px;"
+        	data-anchor-target="#slide-1"
+        	style="background-position: 50% 0px;"
+    	> 
+
+        	<div class="hsContainer">
+ 				
+ 				<div class="hsContent skrollable skrollable-before"
+                	data-center="opacity: 1"
+                	data-106-top="opacity: 0"
+                	data-anchor-target="#slide-1 h2"
+                	style="opacity:1;"
+            	>
+            	
+             		<h2>Fade out elements before they leave viewport</h2>
+           		</div>
+        	
+        	</div>
+    	
+    	</div>
+   
+	</section> 
 
 <!-- Curtain effect -->
 <!-- <section id="slide-4" class="homeSlide homeSlideTall">
@@ -101,28 +135,31 @@
     </div>
 </section> -->
 
-<!-- Crossfade to blur effect -->
-<section id="slide-5" class="homeSlide homeSlideTall2">
+	<!-- Crossfade to blur effect -->
+	<section id="slide-5" class="homeSlide homeSlideTall2">
 
-    <div class="bcg">&nbsp;</div>
+    	<div class="bcg">&nbsp;</div>
 
-    <div class="bcg bcg2"
-        data-bottom-top="opacity: 0;"
-        data--33p-top="opacity: 0;"
-        data--66p-top="opacity: 1;"
-        data-anchor-target="#slide-5"
-    >  
-        <div class="hsContainer">
-            <div class="hsContent"
-                data-bottom-top="opacity: 0;"
-                data-center="opacity: 1"
-                data-anchor-target="#slide-5"
-            >
-            <h2>Why isn't this text showing up??</h2>
-   
-            </div>
-        </div>
-    </div>
+    	<div class="bcg bcg2"
+        	data-bottom-top="opacity: 0;"
+        	data--33p-top="opacity: 0;"
+        	data--66p-top="opacity: 1;"
+        	data-anchor-target="#slide-5"
+    	>  
+        	<div class="hsContainer">
+            
+            	<div class="hsContent"
+               		data-bottom-top="opacity: 0;"
+                	data-center="opacity: 1"
+                	data-anchor-target="#slide-5"
+            	>
+            		<h2>Why isn't this text showing up??</h2>
+            	</div>
+        
+        	</div>
+    	
+    	</div>
+
     <!--<div class="bcg bcg3"
         data-300-bottom="opacity: 0;"
         data-100-bottom="opacity: 1;"
@@ -138,7 +175,11 @@
             </div>
         </div>
     </div>-->
-</section>
+  
+	</section>
+
+</div>
+
 </main>
 
 

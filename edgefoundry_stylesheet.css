@@ -62,7 +62,7 @@ h2 {
     background: url('../img/ico_loading.gif') no-repeat center center;
 } 
 section {
-    min-width: 960px;
+    /*min-width: 960px;*/
     opacity: 0;
 }
 .loaded section,
@@ -75,8 +75,29 @@ section {
 main {
     overflow-x: hidden;
 }
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navbar-inverse {
+    border-radius: 0px !important;
+
+}
+
+.navbar {
+    margin-bottom: 0px !important;
+}
+
+.navbar-brand {
+    margin-left: 0px !important;
+}
 /* Fade out elements */
-    
+ 
+ #top {
+   
+ }   
 .hsContainer {
     display: table;
     table-layout: fixed;
@@ -87,7 +108,7 @@ main {
     /*opacity: 0; */
 }
 .hsContent { 
-    /*max-width: 450px;*/
+    max-width: 450px;
     margin: -150px auto 0 auto;
     display: table-cell;
     vertical-align: middle;
@@ -113,7 +134,10 @@ main {
     width: 100%;
 }
 /* Slide 1 */
-#slide-1 .bcg {background-image:url("Images/two_coders.png")} 
+#slide-1 .bcg {
+    background-image:url("Images/two_coders.jpg")
+
+} 
 
 /* Slide 4 */
 /* Curtain Effect */
@@ -137,9 +161,9 @@ main {
 /* Slide 5 */
 /* Crossfade to blur effect */
 #slide-5 {position: relative;}
-#slide-5 .bcg {background-image:url("Images/students.png")}
+#slide-5 .bcg {background-image:url("Images/students_class.jpg")}
 #slide-5 .bcg2 {
-    background-image:url("Images/students_blur.png");
+    background-image:url("Images/students_class_blur.jpg");
     position: fixed; bottom: 0; left: 0;
     opacity: 0; z-index: 1
 }
